@@ -27,9 +27,9 @@ fun solve(input: String): Int {
     val p1 = (20..220 step 40).fold(0) {res, idx -> res + xValues[idx-2]*idx}
     println("p1: $p1")
 
-    val screen = (1 .. xValues.size).map { cycle ->
-        val xInCycle: Int = if (cycle > 1) xValues[cycle -2] else 1
-        if (cycle in (xInCycle-1..xInCycle+1)) '#' else '.'
+    val screen = (0 .. 239).map { cycle ->
+        val xInCycle: Int = if (cycle > 0) xValues[cycle -1] else 1
+        if ((cycle % 40) in (xInCycle-1..xInCycle+1)) '#' else '.'
     }
 
     val p2 = screen.chunked(40).joinToString(System.lineSeparator())
