@@ -43,7 +43,7 @@ fun mix(nodes: List<Node>) {
         node.delete()
         val offset = Math.floorMod(node.value, (nodes.size - 1))
         val left = node.prev!!.lookup(offset)
-        val right = node.next!!.lookup(offset)
+        val right = left.next!!
         left.append(node)
         node.append(right)
     }
