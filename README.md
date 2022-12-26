@@ -4,6 +4,6 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 
 |                 Year                  |  Language  | Completion |
 | :-----------------------------------: | :--------: |:----------:|
-| [2022](https://adventofcode.com/2022) |   Kotlin   |   34/50    |
+| [2022](https://adventofcode.com/2022) |   Kotlin   |   39/50    |
 | [2019](https://adventofcode.com/2019) | Javascript |   10/50    |
 | [2018](https://adventofcode.com/2018) | JavaScript |   05/50    |
